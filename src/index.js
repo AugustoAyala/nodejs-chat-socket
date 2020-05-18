@@ -11,9 +11,7 @@ app.set('port', process.env.PORT || 3000);
 
 require('./conexion')(io);
 
-
 app.use(express.static(path.join(__dirname, 'public')));
-
 
 server.listen(app.get('port'), () => {
 	console.log('server on', app.get('port'));
